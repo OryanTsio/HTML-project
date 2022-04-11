@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<ul>
+    <li style="border-style:double;;"><a href="tafrit.html">Home</a></li> 
+    <li style="border-style: double;"><a href="calculator.html">Calculator</a></li>
+    <li style="float:right;border: double;background-color: white;"><a style="color:red;" href="myID.html">About Me</a></li>
+    <li style="border-style:double ; "><a href="photos.html">Photos</a></li>
+    <li style="border-style: double;"><a href="Academic.html">Academic Home</a></li>  
+    <li style="border-style: double;"><a href="quiz.html">bilionare Game</a></li>  
+   </ul> 
+<script src="timer.js"></script>
+<br><br>
+<h1 align="center">Who Wants To Be Bilionare</h1>
+<style>
+ body
+ {
+     background-image: url(gameshow.jpg);
+     background-repeat: no-repeat;
+     background-size: cover ;
+     color: white;
+     text-align:left;
+ }
+ h1
+ {
+ border-style: dotted;
+ color: tomato;
+ background-color: white;
+
+ }
+ button
+ {
+     font-size: large;
+ }
+p
+{
+text-align: left;
+}
+   
+</style>
+
+<body>
+    <h3>Q1 (25%):</h3>
+    <p>biggest player of barca?</p>
+    <input type="radio"  name="dugma" value="t1" id="a1" > leo messi<br>
+    <input type="radio"  name="dugma" value="t2" id="a2" > cristiano ronaldo<br>
+    <input type="radio"  name="dugma" value="t3" id="a3" > neymar jr<br>
+    <input type="radio"  name="dugma" value="t3" id="a4" > mo salah<br>
+    
+    <h3>Q2 (25%):</h3>
+    <p>the star of GS Warriors__?</p>
+    <input type="radio"  name="dugma1" value="t1" id="a5" > Curry<br>
+    <input type="radio"  name="dugma1" value="t2" id="a6" > Lebron james<br>
+    <input type="radio"  name="dugma1" value="t3" id="a7" > Kawai leonard<br>
+    <input type="radio"  name="dugma1" value="t3" id="a8" > derrik rose<br>
+    
+    <h3>Q3 (25%):</h3>
+    <p>fastest runner of all time?</p>
+    <input type="radio"  name="dugma2" value="t1" id="a9" >usain bolt <br>
+    <input type="radio"  name="dugma2" value="t2" id="a10" >james gist<br>
+    <input type="radio"  name="dugma2" value="t3" id="a11" > ploni<br>
+    <input type="radio"  name="dugma2" value="t3" id="a12" > almoni<br>
+    
+    <h3>Q4 (25%):</h3>
+    <p>what is the score between barca vs osasuna?</p>
+    <input type="radio"  name="dugma3" value="t1" id="a13" >2-1 barca<br>
+    <input type="radio"  name="dugma3" value="t2" id="a14" >1-2 osasuna<br>
+    <input type="radio"  name="dugma3" value="t3" id="a15" >3-0 barca<br>
+    <input type="radio"  name="dugma3" value="t3" id="a16" >5-1 osasuna<br>
+    
+    <br>
+    <button width="100px" onclick="result()">result</button>
+    <h1 class="two">Result:   <span id="result">  </span>
+</body>
+</html>

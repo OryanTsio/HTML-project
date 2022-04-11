@@ -1,0 +1,29 @@
+
+ul
+    {
+        
+     list-style:none;
+     margin: 0;
+     padding: 0;
+     
+     position:fixed;
+     top: 0;
+     width: 99%;
+    }
+    li
+    {
+        float: right;
+        background-color: blue;
+    }
+    li a
+    {
+      color:white;
+      display: block;
+      text-align: center;
+      padding: 10px 10px;
+    }
+    li a:hover
+    {
+      color:white;
+      background-color: black;
+    }

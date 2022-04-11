@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <title>Calculator</title>
+</head>
+<ul>
+    <li style="border-style:double;;"><a href="tafrit.html">Home</a></li> 
+    <li style="border-style: double;"><a href="calculator.html">Calculator</a></li>
+    <li style="float:right;border: double;background-color: white;"><a style="color:red;" href="myID.html">About Me</a></li>
+    <li style="border-style:double ; "><a href="photos.html">Photos</a></li>
+    <li style="border-style: double;"><a href="Academic.html">Academic Home</a></li> 
+    <li style="border-style: double;"><a href="quiz.html">bilionare Game</a></li>   
+   </ul>   
+<body>
+    <style>
+        body
+        {
+         background-image: url(math.jpg);
+        }
+    #clear{  
+        width: 270px;  
+        border: 3px solid gray;  
+            border-radius: 3px;  
+            padding: 10px;  
+            text-align: 99%;  
+        }
+        #clear:hover
+        {
+          background-color: darkblue;
+          color: white;
+        }   
+        .formstyle  
+        {  
+        width: 300px;  
+        height: 550px;  
+        margin: auto;  
+        border: 3px solid gray;  
+        border-radius: 10px;  
+        padding: 20px;
+        box-shadow: 10px 10px 15px;  
+        }   
+        input  
+        {  
+        width: 30px;  
+        color: black;
+        font-size: larger;  
+        border: 5px solid black;  
+            border-radius: 15px;  
+            padding: 25px;  
+            margin: 5px;  
+            font-size: 15px;  
+        }
+        input:hover
+        {
+          background-color: darkblue;
+          color: white;
+        }     
+        #calc{  
+        width: 250px;  
+        border: 5px solid black;
+            border-radius: 3px;  
+            padding: 20px;  
+            margin: auto;  
+        }   
+        </style> 
+        <script>
+            function calcme()
+            {
+                let str = document.getElementById('calc').value;
+                document.getElementById('calc').value=eval(str);
+            }
+            </script> 
+    <br><br><br>
+    <h1 class="one">מחשבון</h1>
+    <div class="formstyle">
+     <form name="form1">
+      <input id="calc" type="text" name="ans" readonly><br><br>
+      <input type="button" value="1" onclick="form1.ans.value+='1'">
+      <input type="button" value="2" onclick="form1.ans.value+='2'">
+      <input type="button" value="3" onclick="form1.ans.value+='3'">
+      <input type="button" value="+" onclick="form1.ans.value+='+'">
+      <br><br>
+      <input type="button" value="4" onclick="form1.ans.value+='4'">
+      <input type="button" value="5" onclick="form1.ans.value+='5'">
+      <input type="button" value="6" onclick="form1.ans.value+='6'">
+      <input type="button" value="-" onclick="form1.ans.value+='-'">
+      <br><br>
+      <input type="button" value="7" onclick="form1.ans.value+='7'">
+      <input type="button" value="8" onclick="form1.ans.value+='8'">
+      <input type="button" value="9" onclick="form1.ans.value+='9'">
+      <input type="button" value="*" onclick="form1.ans.value+='*'">
+      <br><br>
+      <input type="button" value="/" onclick="form1.ans.value+='/'">  
+      <input type="button" value="0" onclick="form1.ans.value+='0'">  
+      <input type="button" value="." onclick="form1.ans.value+='.'">  
+      <input type="button" value="=" onclick="calcme()"> 
+      <br>
+      <input type="button" value="נקה" onclick="document.getElementById('calc').value=''"id="clear">  
+     </form>  
+    </div>
+</body>
+
+</html>
